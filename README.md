@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍔 Foodie Cart
 
-## Getting Started
+**Foodie Cart** is a full-featured food ordering app built with **Next.js**, featuring beautiful UI with **shadcn/ui**, data from **Hygraph CMS**, Clerk-based auth, and PayPal integration.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🍽 Browse restaurants by category: Pizza, Indian, Burgers, BBQ, etc.
+- 📋 Menus with rich descriptions, prices, and categories
+- 🛒 Add items to cart and pay via **PayPal**
+- ⭐ Leave reviews & ratings
+- 🔐 Secure auth with **Clerk**
+- 📧 Email support via **Resend**
+
+---
+
+## 🧪 Tech Stack
+
+| Tech              | Purpose                          |
+|-------------------|----------------------------------|
+| **Next.js 14**     | React-based fullstack framework |
+| **Tailwind CSS**   | Utility-first styling           |
+| **shadcn/ui**      | UI components (built on Radix)  |
+| **Hygraph (GraphCMS)** | Headless CMS for restaurant & menu data |
+| **Clerk**          | Authentication                  |
+| **Resend**         | Email sending                   |
+| **PayPal SDK**     | Payments                        |
+| **Sonner**         | Toast notifications             |
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repo
 
 ```bash
+git clone https://github.com/your-username/foodie-cart.git
+cd foodie-cart
+
+2. Install Dependencies
+npm install
+# or
+yarn install
+3. Add Environment Variables
+Create a .env.local file:
+
+env
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+HYGRAPH_API_URL=https://your-hygraph-endpoint
+RESEND_API_KEY=your_resend_api_key
+PAYPAL_CLIENT_ID=your_paypal_client_id
+GOOGLE_API_KEY=your_google_key (if using Gemini/GPT)
+⚠️ This file is sensitive and should not be committed to Git.
+
+4. Run Dev Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧪 Scripts
+Script	Description
+npm run dev	Starts local dev server
+npm run build	Builds app for production
+npm start	Starts production server
+npm run lint	Runs ESLint
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🚀 Deployment (Vercel)
+Push your code to GitHub
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Go to vercel.com
 
-## Learn More
+Import the GitHub repo
 
-To learn more about Next.js, take a look at the following resources:
+Add all required environment variables in the Vercel project settings
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Click Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+✅ Done!
 
-## Deploy on Vercel
+📸 Screenshots
+Coming soon...
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧠 Credits
+UI built with shadcn/ui
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+CMS powered by Hygraph
+
+Auth via Clerk
+
+Emails via Resend
+
+📝 License
+MIT — use it freely!
+
+---
